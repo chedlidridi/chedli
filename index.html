@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>développement web</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="res/summer.ico" />
+  </head>
+  <body>
+    <div id="home">
+      <h1>développement web</h1>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.speedy.vpn&hl=en_US&pli=1"
+        >vpn</a
+      >
+      <button><a href="#contact_form">contact me</a></button>
+      <button><a href="projects.html">my projects</a></button>
+    </div>
+
+    <h2>Intro</h2>
+    <p>
+      Un développeur web est un informaticien spécialisé dans la programmation
+      ou expressément impliqué dans le développement des applications du web, ou
+      des applications qui sont exécutées à partir d'un serveur web sur un
+      navigateur web et qui utilisent le protocole HTTP comme vecteur de
+      transmission de l'information.
+    </p>
+
+    <h2>Nature de l'emploi</h2>
+    <p>
+      Les développeurs web peuvent travailler dans différents types
+      d'organisations, y compris les grandes sociétés et les gouvernements, les
+      petites et moyennes entreprises. Certains développeurs web travaillent
+      pour un organisme comme employés à temps plein, tandis que d'autres
+      peuvent travailler comme des consultants indépendants ou comme
+      sous-traitants pour une agence d'emploi, une agence web ou une ESN. Ils
+      peuvent être salariés ou bien freelances. Les développeurs web
+      interviennent à la fois côté serveur et au niveau front-end. Cela implique
+      généralement la mise en œuvre de tous les éléments visuels que les
+      utilisateurs peuvent voir et utiliser dans l'application web, ainsi que
+      tous les services web et API qui sont nécessaires pour alimenter le
+      front-end.
+    </p>
+    <ol>
+      <li>css</li>
+      <li>html</li>
+      <li>javascript</li>
+    </ol>
+    <hr />
+    <div>
+      <img src="res/html.png" width="20%" />
+      <img src="res/css.png" width="15%" />
+      <img src="res/js.webp" width="21%" />
+    </div>
+    <hr />
+    <br />
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/BRq7rBtxfAU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <hr />
+    <div class="flex">
+      <h2>contact me</h2>
+      <form id="contact_form">
+        <span>name:</span>
+        <input type="text" name="name" /><br />
+        <span>email:</span>
+        <input type="email" name="email" /><br />
+        <span>password:</span>
+        <input type="password" name="password" /><br />
+        <span>color:</span>
+        <input type="color" name="color" /><br />
+        <span>date:</span>
+        <input type="date" name="date" /><br />
+        <span>submit:</span>
+        <input type="submit" name="submit" /><br />
+      </form>
+    </div>
+    <button id="topButton" onclick="scrollToTop()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-6H8l4-5 4 5h-3z"
+        />
+      </svg>
+    </button>
+  </body>
+  <script>
+    function scrollToTop() {
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, Opera, Safari
+      document.body.scrollTop = 0; // For old versions of IE and Safari
+    }
+
+    window.onscroll = function () {
+      showTopButton();
+    };
+
+    function showTopButton() {
+      var topButton = document.getElementById("topButton");
+      if (
+        document.documentElement.scrollTop > 300 ||
+        document.body.scrollTop > 300
+      ) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    }
+  </script>
+</html>
